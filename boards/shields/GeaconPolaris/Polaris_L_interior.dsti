@@ -88,7 +88,8 @@
         status = "okay";
         device = <&trackpad_split>;
         
-        input-processors = <&scroll_runtime_input_processor_r>;
+        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
+                           <&mouse_runtime_input_processor>;
     };
     
 	scroll_runtime_input_processor_r: scroll_runtime_input_processor_r {

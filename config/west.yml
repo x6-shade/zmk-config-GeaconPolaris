@@ -15,8 +15,6 @@ manifest:
       revision: v0.3
       path: modules/zmk-rgbled-widget
     - name: zmk-pmw3610-driver
-      # remote: badjeff
-      # remote: cormoran
       url: https://github.com/efogdev/zmk-pmw3610-driver
       revision: main
       path: modules/zmk-pmw3610-driver
@@ -45,10 +43,6 @@ manifest:
       revision: main
       url: https://github.com/cormoran/zmk-module-runtime-input-processor
       path: modules/zmk-module-runtime-input-processor
-    - name: zmk-module-battery-history
-      revision: main
-      url: https://github.com/cormoran/zmk-module-battery-history
-      path: modules/zmk-module-battery-history
     - name: zmk-module-ble-management
       revision: main
       url: https://github.com/cormoran/zmk-module-ble-management

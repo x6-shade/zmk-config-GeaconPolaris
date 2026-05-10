@@ -27,6 +27,11 @@ include:
     snippet: zmk-usb-logging studio-rpc-usb-uart
     artifact-name: Polaris_R_MODULE_TB
 
+  - board: seeeduino_xiao_ble
+    shield: Polaris_R_Base Polaris_R_TPD rgbled_adapter
+    snippet: zmk-usb-logging studio-rpc-usb-uart
+    artifact-name: Polaris_R_MODULE_TPD
+
 # Settings Reset
   - board: seeeduino_xiao_ble
     shield: settings_reset
