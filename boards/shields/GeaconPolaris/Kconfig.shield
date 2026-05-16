@@ -7,6 +7,9 @@ config SHIELD_Polaris_R_TB
 config SHIELD_Polaris_R_TPD
     def_bool $(shields_list_contains,Polaris_R_TPD)
 
+config SHIELD_Polaris_R_IQS
+    def_bool $(shields_list_contains,Polaris_R_IQS)
+
 
 config SHIELD_Polaris_L_Base
     def_bool $(shields_list_contains,Polaris_L_Base)
@@ -19,6 +22,6 @@ config SHIELD_Polaris_L_JOY
 
 config SHIELD_Polaris_L_TB
     def_bool $(shields_list_contains,Polaris_L_TB)
-    
+
 config SHIELD_Polaris_L_TPD
     def_bool $(shields_list_contains,Polaris_L_TPD)

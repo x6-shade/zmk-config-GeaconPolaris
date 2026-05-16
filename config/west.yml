@@ -6,41 +6,34 @@ manifest:
       url-base: https://github.com/te9no
     - name: cormoran
       url-base: https://github.com/cormoran
+    - name: ShiniNet
+      url-base: https://github.com/ShiniNet
   projects:
     - name: zmk
       # remote: zmkfirmware
       remote: te9no
       revision: v0.3-branch+dya
       import: app/west.yml
+
+# ZMK RGB LED Widget
     - name: zmk-rgbled-widget
       url: https://github.com/caksoylar/zmk-rgbled-widget
       revision: v0.3
       path: modules/zmk-rgbled-widget
-    - name: zmk-pmw3610-driver
-      url: https://github.com/efogdev/zmk-pmw3610-driver
-      revision: main
-      path: modules/zmk-pmw3610-driver
-    - name: zmk-analog-input-driver
-      url: https://github.com/badjeff/zmk-analog-input-driver
-      revision: main
-      path: modules/zmk-analog-input-driver
-    - name: zmk-nice-oled
-      # remote: mctechnology17
-      url: https://github.com/te9no/zmk-nice-oled
-      revision: main
-      path: modules/zmk-nice-oled
+
+# ZMK Layout Shift
     - name: zmk-layout-shift
       revision: v1
       url: https://github.com/kot149/zmk-layout-shift
       path: modules/zmk-layout-shift
+
+#Custom input processors
     - name: zmk-input-processor-keybind
       revision: main
       url: https://github.com/te9no/zmk-input-processor-keybind
       path: modules/zmk-input-processor-keybind
-    # - name: cirque-input-module
-    #   revision: main
-    #   url: https://github.com/petejohanson/cirque-input-module
-    #   path: modules/cirque-input-module
+
+# DYA Studio Runtime Processors
     - name: zmk-module-runtime-input-processor
       revision: main
       url: https://github.com/cormoran/zmk-module-runtime-input-processor
@@ -58,14 +51,44 @@ manifest:
       url: https://github.com/cormoran/zmk-module-settings-rpc
       path: modules/zmk-module-settings-rpc
 
+# Trackball
+    - name: zmk-pmw3610-driver
+      url: https://github.com/efogdev/zmk-pmw3610-driver
+      revision: main
+      path: modules/zmk-pmw3610-driver
+
+# OLED
+    - name: zmk-nice-oled
+      # remote: mctechnology17
+      url: https://github.com/te9no/zmk-nice-oled
+      revision: main
+      path: modules/zmk-nice-oled
+
+# Trackpad
     - name: zmk-module-cirque-trackpad
       revision: main
       url: https://github.com/te9no/zmk-module-cirque-trackpad
       path: modules/zmk-module-cirque-trackpad
+    - name: zmk-driver-iqs9151-rpc
+      remote: te9no
+      revision: main
+      path: modules/zmk-driver-iqs9151-rpc
+    # - name: cirque-input-module
+    #   revision: main
+    #   url: https://github.com/petejohanson/cirque-input-module
+    #   path: modules/cirque-input-module
+
+# Analog input
+    - name: zmk-analog-input-driver
+      url: https://github.com/badjeff/zmk-analog-input-driver
+      revision: main
+      path: modules/zmk-analog-input-driver
     - name: zmk-module-analoginput-rpc
       revision: main
       url: https://github.com/te9no/zmk-module-analoginput-rpc
       path: modules/zmk-module-analoginput-rpc
+
+# ZMK fix for Analog input driver
     - name: zmk-module-battery-nrf-vddh-oversampling
       revision: main
       url: https://github.com/te9no/zmk-module-battery-nrf-vddh-oversampling
@@ -76,4 +99,4 @@ manifest:
     #   path: modules/zmk-feature-cdc-acm-bootloader-trigger
   self:
     path: config
-    
+
