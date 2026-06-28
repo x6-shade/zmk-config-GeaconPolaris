@@ -2,12 +2,12 @@
   "repository": "x6-shade/zmk-config-GeaconPolaris",
   "branch": "main",
   "target": "all",
-  "status": "passing",
-  "raw_status": "success",
-  "color": "#2ea44f",
-  "sha": "fbc2be66f51f0b804580c9fd16825b2424571982",
-  "run_id": "28316862464",
-  "run_number": "13",
-  "run_url": "https://github.com/x6-shade/zmk-config-GeaconPolaris/actions/runs/28316862464",
-  "generated_at": "2026-06-28T08:49:24Z"
+  "status": "failing",
+  "raw_status": "failure",
+  "color": "#d73a49",
+  "sha": "75a72f5cf255b9377685fdfcf7f687b3172aa1ad",
+  "run_id": "28317536186",
+  "run_number": "14",
+  "run_url": "https://github.com/x6-shade/zmk-config-GeaconPolaris/actions/runs/28317536186",
+  "generated_at": "2026-06-28T09:17:21Z"
 }
