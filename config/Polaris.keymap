@@ -36,12 +36,12 @@
         rsr_msch: rsr_msch {
 			compatible = "zmk,behavior-sensor-rotate";
 			#sensor-binding-cells = <0>;
-			binding = <&msc SCRL_DOWN>,<&msc SCRL_UP>;
+			bindings = <&msc SCRL_DOWN>,<&msc SCRL_UP>;
 		};
         rsr_mscv: rsr_mscv {
 			compatible = "zmk,behavior-sensor-rotate";
 			#sensor-binding-cells = <0>;
-			binding = <&msc SCRL_RIGHT>,<&msc SCRL_LEFT>;
+			bindings = <&msc SCRL_RIGHT>,<&msc SCRL_LEFT>;
 		};
     };
 };
